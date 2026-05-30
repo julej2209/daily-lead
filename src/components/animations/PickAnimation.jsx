@@ -5,6 +5,7 @@ import TicketAnimation from './TicketAnimation'
 import StarsAnimation from './StarsAnimation'
 import CardsAnimation from './CardsAnimation'
 import NamesAnimation from './NamesAnimation'
+import ScratchAnimation from './ScratchAnimation'
 
 export default function PickAnimation({
   mode,

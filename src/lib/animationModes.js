@@ -20,6 +20,7 @@ export const ANIMATION_OPTIONS = [
   { id: ANIMATION_MODES.ticket, label: 'Золотой билет', icon: 'Ticket' },
   { id: ANIMATION_MODES.stars, label: 'Звёздное небо', icon: 'Star' },
   { id: ANIMATION_MODES.cards, label: 'Карты', icon: 'CreditCard' },
+  { id: ANIMATION_MODES.cards, label: 'Скретч-карта', icon: 'scratch' },
 ]
 
 export function loadAnimationMode() {
@@ -50,6 +51,7 @@ export const SPIN_STATUS = {
   [ANIMATION_MODES.ticket]: 'Открываем конверт…',
   [ANIMATION_MODES.stars]: 'Стягиваем звёзды…',
   [ANIMATION_MODES.cards]: 'Раскладываем карты…',
+  [ANIMATION_MODES.cards]: 'Скретчим карту…',
 }
 
 export const CAROUSEL_COLORS = [

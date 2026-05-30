@@ -1,8 +1,6 @@
 import { ANIMATION_MODES } from '../../lib/animationModes'
 import FortuneWheel from '../FortuneWheel'
-import SlotAnimation from './SlotAnimation'
 import DiceAnimation from './DiceAnimation'
-import CarouselAnimation from './CarouselAnimation'
 import TicketAnimation from './TicketAnimation'
 import StarsAnimation from './StarsAnimation'
 import CardsAnimation from './CardsAnimation'

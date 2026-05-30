@@ -16,9 +16,7 @@ export const STORAGE_KEY = 'roulette-animation-mode'
 export const ANIMATION_OPTIONS = [
   { id: ANIMATION_MODES.wheel, label: 'Колесо фортуны', icon: 'CircleDot' },
   { id: ANIMATION_MODES.names, label: 'Имена', icon: 'Zap' },
-  { id: ANIMATION_MODES.slot, label: 'Слот-машина', icon: 'LayoutGrid' },
   { id: ANIMATION_MODES.dice, label: '3D Кубик', icon: 'Box' },
-  { id: ANIMATION_MODES.carousel, label: 'Карусель', icon: 'Layers' },
   { id: ANIMATION_MODES.ticket, label: 'Золотой билет', icon: 'Ticket' },
   { id: ANIMATION_MODES.stars, label: 'Звёздное небо', icon: 'Star' },
   { id: ANIMATION_MODES.cards, label: 'Карты', icon: 'CreditCard' },

@@ -1,7 +1,6 @@
 import { ANIMATION_MODES } from '../../lib/animationModes'
 import FortuneWheel from '../FortuneWheel'
 import DiceAnimation from './DiceAnimation'
-import TicketAnimation from './TicketAnimation'
 import StarsAnimation from './StarsAnimation'
 import CardsAnimation from './CardsAnimation'
 import NamesAnimation from './NamesAnimation'
@@ -30,18 +29,14 @@ export default function PickAnimation({
       )
     case ANIMATION_MODES.names:
       return <NamesAnimation {...props} />
-    case ANIMATION_MODES.slot:
-      return <SlotAnimation {...props} />
     case ANIMATION_MODES.dice:
       return <DiceAnimation {...props} />
-    case ANIMATION_MODES.carousel:
-      return <CarouselAnimation {...props} />
-    case ANIMATION_MODES.ticket:
-      return <TicketAnimation {...props} />
     case ANIMATION_MODES.stars:
       return <StarsAnimation {...props} />
     case ANIMATION_MODES.cards:
       return <CardsAnimation {...props} />
+    case ANIMATION_MODES.scratch:
+      return <ScratchAnimation winner={winner} onComplete={onComplete} />
     default:
       return <NamesAnimation {...props} />
   }

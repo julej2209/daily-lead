@@ -29,6 +29,7 @@ import {
   resolveSelection,
 } from '../lib/rouletteLogic'
 import { updateRouletteState } from '../lib/supabase'
+import ScratchAnimation from './animations/ScratchAnimation'
 
 const ICONS = {
   CircleDot,

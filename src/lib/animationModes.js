@@ -1,15 +1,14 @@
 export const ANIMATION_MODES = {
   wheel: 'wheel',
   names: 'names',
-  slot: 'slot',
   dice: 'dice',
-  carousel: 'carousel',
-  ticket: 'ticket',
   stars: 'stars',
   cards: 'cards',
+  scratch: 'scratch',
+  // ticket, slot, carousel удалены, так как файлов больше нет
 }
 
-export const REMOVED_MODES = ['ticker', 'pulse', 'film']
+export const REMOVED_MODES = ['ticker', 'pulse', 'film', 'ticket', 'slot', 'carousel']
 
 export const STORAGE_KEY = 'roulette-animation-mode'
 
@@ -17,10 +16,9 @@ export const ANIMATION_OPTIONS = [
   { id: ANIMATION_MODES.wheel, label: 'Колесо фортуны', icon: 'CircleDot' },
   { id: ANIMATION_MODES.names, label: 'Имена', icon: 'Zap' },
   { id: ANIMATION_MODES.dice, label: '3D Кубик', icon: 'Box' },
-  { id: ANIMATION_MODES.ticket, label: 'Золотой билет', icon: 'Ticket' },
   { id: ANIMATION_MODES.stars, label: 'Звёздное небо', icon: 'Star' },
   { id: ANIMATION_MODES.cards, label: 'Карты', icon: 'CreditCard' },
-  { id: ANIMATION_MODES.cards, label: 'Скретч-карта', icon: 'scratch' },
+  { id: ANIMATION_MODES.scratch, label: 'Скретч-карта', icon: 'Eraser' },
 ]
 
 export function loadAnimationMode() {
@@ -45,13 +43,10 @@ export function saveAnimationMode(mode) {
 export const SPIN_STATUS = {
   [ANIMATION_MODES.wheel]: 'Крутим колесо…',
   [ANIMATION_MODES.names]: 'Мелькают имена…',
-  [ANIMATION_MODES.slot]: 'Крутим барабаны…',
   [ANIMATION_MODES.dice]: 'Бросаем кубик…',
-  [ANIMATION_MODES.carousel]: 'Крутим карусель…',
-  [ANIMATION_MODES.ticket]: 'Открываем конверт…',
   [ANIMATION_MODES.stars]: 'Стягиваем звёзды…',
   [ANIMATION_MODES.cards]: 'Раскладываем карты…',
-  [ANIMATION_MODES.cards]: 'Скретчим карту…',
+  [ANIMATION_MODES.scratch]: 'Скретчим карту…',
 }
 
 export const CAROUSEL_COLORS = [
